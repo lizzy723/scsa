@@ -1,7 +1,8 @@
 // 3_변수6- 26 page 3.11
 #include <iostream>
-#include <cstring> 
-#include <string>
+#include <cstring>  // <string.h> 의 C++ 버전. strcpy()등의 문자열 함수를 위해서
+#include <string>   // std::string 타입을 사용하기 위한 헤더.
+
 
 int main()
 {
