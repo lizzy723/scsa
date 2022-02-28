@@ -24,4 +24,15 @@ int main()
 	// auto 는 정말 우변과 같은 타입은 아니고, 
 	// 내부적으로 타입을 결정하는 규칙이 있습니다.(auto type deduction 검색해보세요)
 
+	auto a1 = c;    // int a1 입니다.
+	decltype(c) d1; // const int d1 입니다. 그런데. 초기값이 없다고 에러 나옵니다.
+
+	
+	int y[3];
+
+	auto a2 = y; // 1) int a2[3] = y;
+				 // 2) int* a2 = y;
+
 }
+
+
