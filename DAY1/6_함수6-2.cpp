@@ -14,6 +14,7 @@ auto add(T1 a, T2 b)    // 그런데, C++14 부터, 이 표기법도 허용하기로 했습니다.
 	return a + b;
 }
 
+
 int main()
 {
 	std::cout << add<int, double>(1, 2.2) << std::endl;  // 타입을 전달하는경우
