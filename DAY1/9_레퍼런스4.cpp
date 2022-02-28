@@ -12,8 +12,11 @@ void f1(const int& n) {} // 2  ==> 절대 이렇게 하지 마세요
 //    void inc(int& r) { ++r;}
 
 // 2. 인자의 값을 변경하지 않는 경우 ( in parameter 라고 합니다.)
-//  A. primitive type 인 경우 : call by value로 하세요
+
+//  A. primitive type 인 경우(int, char, double등) : call by value로 하세요
 //								ex) void foo(int n) {}
+//								ex) void foo(const int& n) {}  <== 이렇게 하지마세요
 
 //  B. user define type 인 경우 : const reference 로 하세요
 //								ex) void foo(const Rect& ) {}
+//								ex) void foo(Rect ) {}  <<= 이렇게 하지 마세요
