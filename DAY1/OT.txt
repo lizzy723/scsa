@@ -30,10 +30,16 @@ C++ : 가장 어려운 언어중의 하나.
 
 github.com/bitcoin
 github.com/aosp-mirror    -> 안드로이드 OS 소스
+			     android open source project
 github.com/tensorflow     -> 구글의 AI 엔진(텐서플로우)
 github.com/webkit         -> safari 
 github.com/chromium	  -> chrome 브라우저
 
+자동차 OS => autosar  => C++11/14 로 제작.. 
+
+그럼 C 언어는요 ??
+linux, windows, osx 등의 모든 OS가 C언어 입니다.
+임베디드(냉장고, 세탁기등도 대부분 C언어)
 
 
 
