@@ -1,17 +1,23 @@
 // 1_namespace1.cpp   -  7page
 #include <stdio.h>
 
-void init()
+namespace Audio
 {
-	printf("init audio\n");
+	void init()
+	{
+		printf("init audio\n");
+	}
+	// Audio 관련 모든 코드(함수, 구조체, 전역변수등)을 여기에 작성합니다
 }
-
-void init()
+namespace Video
 {
-	printf("init video\n");
+	void init()
+	{
+		printf("init video\n");
+	}
 }
 
 int main()
 {
-	init(); // ??
+	Audio::init(); // ??
 }
