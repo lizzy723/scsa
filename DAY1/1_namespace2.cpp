@@ -16,6 +16,10 @@ int main()
 	Audio::init(); 
 
 	// 2. using declaration(선언) 사용
-	using Audio::init;
+	using Audio::init;	// init 은 Audio 이름 없이 사용가능
+	init();				// 
+
+	// 3. using directive(지시어) 사용
+	using namespace Audio; // Audio 내의 모든 이름(함수, 구조체등)을 Audio 없이 접근
 	init();
 }
