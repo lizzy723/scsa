@@ -17,5 +17,7 @@ int main()
 
 	std::cout << &square<double> << std::endl; // 물론,cout 으로 출력해도 됩니다.
 }
-
+// 핵심 
+// square      : 함수가 아닙니다. 함수를 만드는 틀(template)입니다.
+// square<int> : 함수 입니다
 
