@@ -28,10 +28,15 @@ int main()
 	decltype(c) d1; // const int d1 입니다. 그런데. 초기값이 없다고 에러 나옵니다.
 
 	
-	int y[3];
+	int y[3];  // y의 정확한 타입은 int[3]
 
-	auto a2 = y; // 1) int a2[3] = y;
-				 // 2) int* a2 = y;
+	auto a2 = y; // 1) int a2[3] = y;  이렇게 결정하면 "컴파일 에러가 됩니다."
+				 // 2) int* a2 = y;    이렇게 결정하면 에러가 아닙니다.
+					//					그래서 2번 입니다
+
+	decltype(y) d2; // d2의 타입은 ?
+					// 1) int d2[3]; => 답
+					// 2) int* d2
 
 }
 
