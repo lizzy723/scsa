@@ -20,3 +20,4 @@ int main()
 void foo(int a, int b /*= 0*/, int c /*= 0*/)
 {
 }
+// godbolt.org
