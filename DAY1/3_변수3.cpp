@@ -17,7 +17,11 @@ int main()
 
 	const int c = 10;
 	auto a = c;   // a의 타입을 예측해 보세요
-					// 1. const int
-					// 2. int 
+					// 1. const int  => 이렇게 결정하면 오히려 개발자에게 
+					//					불편하게 됩니다.
+					// 2. int  => 정답
+
+	// auto 는 정말 우변과 같은 타입은 아니고, 
+	// 내부적으로 타입을 결정하는 규칙이 있습니다.(auto type deduction 검색해보세요)
 
 }
