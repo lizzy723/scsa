@@ -21,7 +21,12 @@ int main()
 
 	// s1, s2 는 사용법이 int 형 변수와 거의 동일합니다.
 	s2 = s1;
+	
 	if (s2 == s1) {}
+
 	s2 = s1 + s2;
+//	s2 = s1 * 3; // 이것도 되나요 ? 파이썬 처럼... 아니요!! error
+				 // 파이썬	s2 = "aa" * 3 => "aaaaaa"
+
 	std::cout << s2 << std::endl;
 }
