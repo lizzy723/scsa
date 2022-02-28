@@ -25,5 +25,5 @@ int main()
 	bool b = true; // 또는 false 로 초기화
 				  // sizeof(bool) 은 1바이트 입니다.
 
-	long long n3 = 10; // 64비트 정수
+	long long n3 = 10; // 64비트 정수 - C++11
 }
