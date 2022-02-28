@@ -5,8 +5,8 @@
 // C 언어 헤더		C++언어가 다시만든헤더
 // <xxxx.h>   ==>  <cxxxx>
 // <stdio.h>  ==>  <cstdio>
-// <stdlib.h> ==>  < ? >
-// <string.h> ==>  < ? >
+// <stdlib.h> ==>  <cstdlib>
+// <string.h> ==>  <cstring>
 
 int main()
 {
