@@ -16,4 +16,8 @@ int main()
 			
 //	goo(0); // goo의 인자는 무슨 타입이었을까요 ?
 //	hoo(nullptr); // goo(0) 코드와 hoo(nullptr) 중 가독성이 좋은 것은 ?
+
+	double* p2 = nullptr;
+	char* p3 = nullptr;
+	void(*f)() = nullptr;// 함수 포인터도 ok.. 즉, 모든 포인터 초기화 가능
 }
