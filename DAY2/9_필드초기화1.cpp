@@ -9,7 +9,18 @@ public:
 	Point(int a)        : x(a) {}
 	Point(int a, int b) : x(a), y(b) {}
 };
+// 위코드를 컴파일러는 아래 코드로 변경합니다.
+class Point
+{
+	int x;
+	int y; 
+public:
+	Point()      : x(0), y(0) {}
+	Point(int a) : x(a), y(0) {}
+	Point(int a, int b) : x(a), y(b) {}
+};
+
 int main()
 {
-	Point pt;
+	Point pt(1,2);
 }
