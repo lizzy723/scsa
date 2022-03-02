@@ -1,4 +1,5 @@
 // Vector.cpp
+#include <cstring>
 #include "Vector.h"
 
 Vector::Vector(int sz)
