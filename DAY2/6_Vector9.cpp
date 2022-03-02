@@ -8,8 +8,8 @@ int main()
 {
 	std::vector<int> v1(5); 
 
-	v1[0] = 10; // 진짜 배열처럼 [] 연산됩니다.
-	v1[1] = 15;
+	v1[0] = 10; // 진짜 배열처럼 [] 연산됩니다. 우리가 만든 v1.setAt(0, 10) 의미
+	v1[1] = 15; 
 	v1.resize(10);
 
 	std::cout << v1.size() << std::endl;
@@ -17,5 +17,6 @@ int main()
 	std::vector<int> v2 = { 1,2,3 }; // 진짜배열처럼 초기화도 가능합니다
 
 	v2.push_back(10); // 끝에 한개 추가
-	std::cout << v2.size() << std::endl;
+
+	std::cout << v2.size() << std::endl; // 4
 }
