@@ -14,6 +14,6 @@ int main()
 //	fn((int*)0); // int* , 예전 스타일
 	fn(nullptr); // int*,   "nullptr 은 포인터형 literal 입니다."
 			
-	goo(0); // goo의 인자는 무슨 타입이었을까요 ?
-	hoo(nullptr); // goo(0) 코드와 hoo(nullptr) 중 가독성이 좋은 것은 ?
+//	goo(0); // goo의 인자는 무슨 타입이었을까요 ?
+//	hoo(nullptr); // goo(0) 코드와 hoo(nullptr) 중 가독성이 좋은 것은 ?
 }
