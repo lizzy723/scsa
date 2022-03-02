@@ -24,5 +24,7 @@ public:
 int Object::sdata = 0;
 int main()
 {
-	Object::f2();
+//	Object::f2();
+//	Object obj;
+//	obj.f2();
 }
