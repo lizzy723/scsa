@@ -42,4 +42,7 @@ int main()
 
 	for (int i = 0; i < count; i++)
 		std::cout << score[i] << ", ";
+
+	// 사용후는 꼭 delete[] 하세요
+	delete[] score;
 }
