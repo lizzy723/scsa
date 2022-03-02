@@ -25,4 +25,6 @@ int main()
 	std::cout << "&p1 : " << &p1 << std::endl;
 	std::cout << "&p2 : " << &p2 << std::endl;
 }
-
+// 파이썬 코드
+// c = Car()  
+// c.Go()   ==> Car.Go(c) 로 변경 됩니다.
