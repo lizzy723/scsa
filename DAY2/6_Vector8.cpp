@@ -28,7 +28,7 @@ public:
 
 		}
 	}
-	void setAt(int idx, T value)
+	void setAt(int idx, const T& value)
 	{
 	
 		ptr[idx] = value;
