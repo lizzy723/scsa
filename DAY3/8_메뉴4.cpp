@@ -15,7 +15,12 @@ public:
 	BaseMenu(const std::string& s) : title(s) {}
 
 	std::string getTitle() const { return title; }
+
+	// 모든 종류의 메뉴는 "선택(command)" 될수 있습니다.
+	// 파생 클래스의 공통의 특징은 기반 클래스에 있어야 한다.!!
+	virtual void command() = 0; // 2
 };
+
 
 class MenuItem : public BaseMenu
 {
@@ -28,7 +33,6 @@ public:
 		_getch();
 	}
 };
-
 class PopupMenu : public BaseMenu
 {
 	std::vector<BaseMenu*> v; // 하위 메뉴 보관
@@ -85,4 +89,5 @@ int main()
 	pm.addMenu(&m3);
 	pm.addMenu(&m4);
 
-	pm.command();  
+	pm.command();
+}
