@@ -45,6 +45,7 @@ public:
 		while (1)
 		{
 			system("cls");
+			
 			int sz = v.size();
 
 			for (int i = 0; i < sz; i++)
