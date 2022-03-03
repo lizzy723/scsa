@@ -3,31 +3,39 @@
 #include <vector>
 #include <conio.h>
 
-class MenuItem
+// PopupMenu 는 MenuItem 뿐 아니라 PopupMenu 자체도
+// 보관 가능해야 합니다
+// PopupMenu 와 MenuItem 은 공통의 기반 클래스가
+// 필요합니다.
+
+class BaseMenu
 {
 	std::string title;
-	int id;
 public:
-	MenuItem(const std::string& s, int n) : title(s), id(n) {}
+	BaseMenu(const std::string& s) : title(s) {}
 
 	std::string getTitle() const { return title; }
+};
 
+class MenuItem : public BaseMenu
+{
+	int id;
+public:
+	MenuItem(const std::string& s, int n) : BaseMenu(s), id(n) {}
 	void command()
 	{
 		std::cout << getTitle() << " 메뉴 선택" << std::endl;
-
 		_getch();
 	}
 };
 
-class PopupMenu
+class PopupMenu : public BaseMenu
 {
-	std::string title;
-	std::vector<MenuItem*> v; // 하위 메뉴 보관
+	std::vector<BaseMenu*> v; // 하위 메뉴 보관
 public:
-	PopupMenu(const std::string& s) : title(s) {}
+	PopupMenu(const std::string& s) : BaseMenu(s) {}
 
-	void addMenu(MenuItem* p) { v.push_back(p); }
+	void addMenu(BaseMenu* p) { v.push_back(p); }
 
 	void command()
 	{
@@ -67,7 +75,7 @@ int main()
 	MenuItem m3("라면", 12);
 	MenuItem m4("돈까스", 13);
 
-	PopupMenu pmRice;
+	PopupMenu pmRice("김밥류");
 	pmRice.addMenu(&m1);
 	pmRice.addMenu(&m2);
 
