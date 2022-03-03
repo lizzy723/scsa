@@ -2,12 +2,10 @@
 #include <iostream>
 
 class Animal
-{
-	int age;
+{	
 public:
-	void cry1() { std::cout << "Animal cry1" << std::endl; }
+	int age;
 };
-
 class Dog : public Animal
 {
 public:
@@ -17,7 +15,7 @@ public:
 int main()
 {
 	Dog dog;
-	Dog* p1 = &dog;
-	int* p2 = &dog;
-	Animal* p3 = &dog;
+	Dog*    p1 = &dog; // ok
+	int*    p2 = &dog; // error
+	Animal* p3 = &dog; // ok. upcasting - ÇÙ½É!!
 }
