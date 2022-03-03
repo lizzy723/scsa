@@ -28,4 +28,5 @@ int main()
 {
 	Derived d1;			// call Derived::Derived() 
 //	Derived d2(5);      // call Derived::Derived(int)  의 코드 생성
-}
+} // d2.~Derived()
+  // d1.~Derived()
