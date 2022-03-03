@@ -18,5 +18,8 @@ public:
 int main()
 {
 	Person p1("kim", 28);
+
+	Person p2 = p1; // 이순간 runtime 오류 발생!!!
+					// 실행해 보세요.
 }
 
