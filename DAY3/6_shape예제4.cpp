@@ -12,7 +12,8 @@ class Shape
 {
 	int color;
 public:
-	// 아래 함수는 "virtual" 로 할까요 말까요 ?
+	// 아래 함수는 "virtual" 로 할까요 말까요 ? => 가상일 필요 없습니다.
+	//										=> 파생클래스가 재정의할필요 없습니다.
 	void setColor(int c) { color = c; }
 
 	virtual void draw() { std::cout << "draw shape" << std::endl; }
