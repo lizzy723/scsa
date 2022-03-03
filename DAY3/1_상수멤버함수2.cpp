@@ -11,13 +11,25 @@ class Rect
 public:
 	Rect(int a, int b, int c, int d) : x(a), y(b), w(c), h(d) {}
 
-	int getArea() const { return w * h; }
+	int getArea() const 
+	{
+		// 상수 멤버 함수 안에서는 멤버 데이타 변경안됩니다.
+//		x = 0; // error
+		return w * h; 
+	}
+	
+	// 사각형 이동 - 상수 멤버함수로 하면 안됩니다. 
+	void move(int dx, int dy)
+	{
+		x = dx;
+		y = dy;
+	}
 };
-
 //void fn(Rect rc)    // call by value 는 오버헤드가 있다.
 void fn(const Rect& rc)
 {
-	int n = rc.getArea();
+	rc.move(1, 2); // error
+	int n = rc.getArea(); // ok 
 }
 int main()
 {
