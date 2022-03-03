@@ -10,6 +10,7 @@ public:
 	Base() {}
 	virtual ~Base() {} // 가상 소멸자
 };
+
 class Derived : public Base
 {
 public:
