@@ -36,8 +36,11 @@ int main()
 		else if (cmd == 9)
 		{
 			// 지금 까지 만든 모든 도형을 그려줍니다.
-			for (auto p : v)
-				p->draw();
+			for (auto p : v) // p 는 Shape* 입니다.
+				p->draw();	 // 그런데, Shape에는 draw()가 없습니다.
+							// 해결책 1. p 를 Rect* 또는 Circle* 로 캐스팅하자.
+							//			==> 그런데, Rect 인지 Circle이지 알수 없다.
+							//       2. Shape에 draw를 넣자! ==> 답
 		}
 	}
 }
