@@ -16,7 +16,6 @@ namespace std
 	};
 	ostream cout; // 결국 cout은 전역변수(객체) 입니다.
 }
-
 int main()
 {
 	int n = 3;
