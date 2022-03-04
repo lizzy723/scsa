@@ -11,5 +11,5 @@ int main()
 	{
 		std::cout << s << std::endl;
 
-	} while (std::next_permutation(s.begin(), s.end());
+	} while (std::next_permutation(s.begin(), s.end()));
 }
