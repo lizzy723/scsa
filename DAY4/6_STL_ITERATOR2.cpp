@@ -25,7 +25,6 @@ int main()
 	auto p2 = std::begin(c); // 멤버 함수 begin 보다.
 							 // 일반 함수 begin 이 좋다.!!!
 							 // c가 raw array 이라도 ok..
-
 }
 
 
