@@ -46,5 +46,5 @@ int main()
 						// cout.operator<<(twoendl)
 						// cout.operator<<(함수주소전달)
 
-	std::cout << menu;
+	std::cout << menu; // cout.operator<<(menu)
 }
