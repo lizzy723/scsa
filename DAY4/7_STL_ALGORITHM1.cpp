@@ -3,6 +3,12 @@
 #include <list>
 #include <deque>
 #include <vector>
+#include <algorithm> 
+
+// 알고리즘
+// 일반적인 의미 : 문제를 해결하는 방법
+// STL 에서     : find 같은 멤버 함수가 아닌 일반 함수(템플릿)을 나타내는 용어
+//				  모든 컨테이너에 적용할수 있는 함수
 
 int main()
 {
