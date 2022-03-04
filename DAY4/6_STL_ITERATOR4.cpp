@@ -28,8 +28,8 @@ int main()
 	std::cout << std::endl;
 
 
-	// 3. C++11 에서 새로 나온 range for 사용
-	for (auto e : c)
+	// 3. C++11 에서 새로 나온 range for 사용 - 모든 컨테이너 가능. 
+	for (auto e : c)   
 		std::cout << e << ", ";
 
 	std::cout << std::endl;
